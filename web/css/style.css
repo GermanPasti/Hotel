@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{  
+    background-image: url("images/hotel.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+} 
+
+
+#sidebar{
+   
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #000000; 
+    left: -200px;
+    transition: all 500ms linear;
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar ul li{
+    
+    color: rgba(230, 230, 230, .9);
+    text-align: center;
+    padding: 15px 10px;
+        
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+    background-color : #ffffff;
+    z-index: 2;
+}
+
+#sidebar .toggle-btn span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid #000;
+}
+
+
+#principal {
+  display: flex;
+  justify-content: center;
+  
+  width: 962px;
+  min-height: 100%;
+  background: #000000; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hijo {
+    text-align: center;
+    color: rgba(230, 230, 230, .9);
+    line-height: 20pt;
+    margin-top: 0%;  
+ 
+}
+
+#input{
+ width: 200px;
+}
+
+table{
+    background-color: white;
+  
+    border-collapse: collapse;
+    width:900px;
+    
+
+    
+}
+
+th, td{
+    padding: 10px;
+}
+
+tr{
+    color:#000000;
+}
+
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px #0F362D;
+    color: White;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+    
+}
+
+tr:hover{
+    background-color: #369681;
+    color: white;
+}
+
+.vertical-menu{
+
+	height: 180px;
+	width: 940px;
+	overflow: auto;
+	border: 1px solid #666;
+	background-color: #000000;
+	padding: 8px;
+}
+
+#log{   
+
+    display: flex;  
+    width: 100px;
+    position: fixed;
+    right: 0;
+    color: #ffb552;
+    
+    list-style:none
+    
+       
+}
+
+#log ul li{
+    margin-right: 0%;
+    text-align: center;
+    list-style:none;
+    font-family: 'Verdana';
+    font-size:small;    
+}
+
+
+#ref{
+    color: #FF0000;
+      text-decoration:none;
+}
+
+.href{
+    color: rgba(230, 230, 230, .9);
+     text-decoration:none;
+}
+
+.btn {     
+    background-color: Transparent;
+    color: rgba(230, 230, 230, .9); 
+}
+
+.btn2 {     
+    background-color: Transparent;
+    color: #000000; 
+    border: 1px;
+    cursor: pointer;
+}
+
+#logDiv{
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+.btn2:hover{
+    color: #ffb552;
+}
+
+
